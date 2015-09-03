@@ -1,0 +1,7 @@
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\bin\Debug\Services.dll
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\bin\Debug\Services.pdb
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\bin\Debug\Common.dll
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\bin\Debug\Common.pdb
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\obj\Debug\Services.dll
+D:\Documents\Documents\Visual Studio 2012\Projects\SBTech\Greyhoundracing\GreyhoundRace\Services\obj\Debug\Services.pdb

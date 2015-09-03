@@ -1,0 +1,23 @@
+﻿@using System.Web.Optimization
+@model GreyhoundRace.Models.RaceEventModel
+
+@{
+    ViewBag.Title = "Greyhound race events";
+    Layout = "_Layout.cshtml";
+}
+
+<h2>"Greyhound race events"</h2>
+<div>
+    <button id="sortName">Sort by name</button>
+    <button id="sortOdds">Sort by odds</button>
+    <button id="reload">Reload data</button>
+</div>
+
+<p id="rData">
+</p>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/GreyhoundJS.js")
+    @Scripts.Render("~/Scripts/GreyhoundJSInit.js")
+}
+

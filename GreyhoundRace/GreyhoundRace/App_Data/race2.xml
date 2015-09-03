@@ -1,0 +1,10 @@
+<UpcomingEvents>
+	<RaceEvent ID="741745" EventNumber="2237" EventTime="2014-08-15T08:54:00" FinishTime="2014-08-15T08:54:40" Distance="375" Name="VELO CITY">
+		<Entry ID="63" Name="Endorphin Rush" OddsDecimal="2.53"/>
+		<Entry ID="552" Name="Fine Design" OddsDecimal="14.06"/>
+		<Entry ID="266" Name="Ancient Orange" OddsDecimal="5.72"/>
+		<Entry ID="332" Name="Ludwig" OddsDecimal="7.45"/>
+		<Entry ID="451" Name="Quickstep" OddsDecimal="11.22"/>
+		<Entry ID="182" Name="Gingerman" OddsDecimal="4.05" />
+	</RaceEvent>
+</UpcomingEvents>
