@@ -9,9 +9,9 @@ namespace FileUploader.Services
     {
         public static bool UploadFiles(string[] files, out string outputMessage)
         {
-            //var uploadServiceBaseAddress = Constants.Constants.ApiSettings.ApiFileUploadEndpoint;
+            var uploadServiceBaseAddress = Constants.Constants.ApiSettings.ApiFileUploadEndpoint;
             //This is for debugging purposes
-            var uploadServiceBaseAddress = "http://localhost:21678/api/file/upload";
+            //var uploadServiceBaseAddress = "http://localhost:21678/api/file/upload";
 
             try
             {

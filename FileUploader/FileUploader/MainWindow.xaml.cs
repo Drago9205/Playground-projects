@@ -24,9 +24,10 @@ namespace FileUploader
         {
             var dialog = new OpenFileDialog
             {
-                DefaultExt = ".jpeg",
+                Multiselect = true,
+                DefaultExt = "*.*",
                 Filter =
-                    "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif"
+                    "All files (*.*)|*.*|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif"
             };
 
             if (dialog.ShowDialog() == true)
