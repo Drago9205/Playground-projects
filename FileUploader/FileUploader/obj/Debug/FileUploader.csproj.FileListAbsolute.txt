@@ -1,0 +1,14 @@
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\bin\Debug\FileUploader.exe.config
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\bin\Debug\FileUploader.exe
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\bin\Debug\FileUploader.pdb
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader.csprojResolveAssemblyReference.cache
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\MainWindow.g.cs
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\App.g.cs
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader_MarkupCompile.cache
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader_MarkupCompile.lref
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\MainWindow.baml
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader.g.resources
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader.Properties.Resources.resources
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader.csproj.GenerateResource.Cache
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader.exe
+c:\users\dragomir.donkov\documents\visual studio 2015\Projects\FileUploader\FileUploader\obj\Debug\FileUploader.pdb
