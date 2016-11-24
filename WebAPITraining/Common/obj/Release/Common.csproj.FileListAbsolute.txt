@@ -1,0 +1,4 @@
+C:\Users\dragomir.donkov\Documents\Visual Studio 2015\Projects\WebAPITraining\Common\bin\Release\Common.dll
+C:\Users\dragomir.donkov\Documents\Visual Studio 2015\Projects\WebAPITraining\Common\bin\Release\Common.pdb
+C:\Users\dragomir.donkov\Documents\Visual Studio 2015\Projects\WebAPITraining\Common\obj\Release\Common.dll
+C:\Users\dragomir.donkov\Documents\Visual Studio 2015\Projects\WebAPITraining\Common\obj\Release\Common.pdb
