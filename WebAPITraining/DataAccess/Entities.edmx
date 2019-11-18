@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WebApiTrainingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="FileStorageSettings">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="StorageUrl" Type="nvarchar" MaxLength="256" />
+          <Property Name="StorageLocalFolder" Type="nvarchar" MaxLength="256" />
+          <Property Name="StoragePath" Type="nvarchar" MaxLength="256" />
+          <Property Name="FullPath" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="RijndaelAESEncryptionHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="SourcePhrase" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="EncryptedPhrase" Type="nvarchar" MaxLength="256" />
+          <Property Name="PhraseEncryptionRequestsCount" Type="int" Nullable="false" />
+          <Property Name="EncryptionVectorUsed" Type="binary" MaxLength="16" Nullable="false" />
+          <Property Name="EncryptionKeyUsed" Type="binary" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="WebApiTrainingModelStoreContainer">
+          <EntitySet Name="FileStorageSettings" EntityType="Self.FileStorageSettings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RijndaelAESEncryptionHistory" EntityType="Self.RijndaelAESEncryptionHistory" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WebApiTrainingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="RijndaelAESEncryptionHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="SourcePhrase" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EncryptedPhrase" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PhraseEncryptionRequestsCount" Type="Int32" Nullable="false" />
+          <Property Name="EncryptionVectorUsed" Type="Binary" MaxLength="16" FixedLength="true" Nullable="false" />
+          <Property Name="EncryptionKeyUsed" Type="Binary" Nullable="false" MaxLength="32" FixedLength="true" />
+        </EntityType>
+        <EntityContainer Name="WebApiTrainingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="RijndaelAESEncryptionHistories" EntityType="Self.RijndaelAESEncryptionHistory" />
+          <EntitySet Name="FileStorageSettings" EntityType="WebApiTrainingModel.FileStorageSetting" />
+        </EntityContainer>
+        <EntityType Name="FileStorageSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="StorageUrl" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="StorageLocalFolder" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="StoragePath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="FullPath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebApiTrainingModelStoreContainer" CdmEntityContainer="WebApiTrainingEntities">
+          <EntitySetMapping Name="RijndaelAESEncryptionHistories">
+            <EntityTypeMapping TypeName="WebApiTrainingModel.RijndaelAESEncryptionHistory">
+              <MappingFragment StoreEntitySet="RijndaelAESEncryptionHistory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SourcePhrase" ColumnName="SourcePhrase" />
+                <ScalarProperty Name="EncryptedPhrase" ColumnName="EncryptedPhrase" />
+                <ScalarProperty Name="PhraseEncryptionRequestsCount" ColumnName="PhraseEncryptionRequestsCount" />
+                <ScalarProperty Name="EncryptionVectorUsed" ColumnName="EncryptionVectorUsed" />
+                <ScalarProperty Name="EncryptionKeyUsed" ColumnName="EncryptionKeyUsed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FileStorageSettings">
+            <EntityTypeMapping TypeName="WebApiTrainingModel.FileStorageSetting">
+              <MappingFragment StoreEntitySet="FileStorageSettings">
+                <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+                <ScalarProperty Name="StoragePath" ColumnName="StoragePath" />
+                <ScalarProperty Name="StorageLocalFolder" ColumnName="StorageLocalFolder" />
+                <ScalarProperty Name="StorageUrl" ColumnName="StorageUrl" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

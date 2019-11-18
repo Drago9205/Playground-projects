@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebApiTrainingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FileStorageSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="StorageUrl" Type="nvarchar" MaxLength="256" />
+    <Property Name="StorageLocalFolder" Type="nvarchar" MaxLength="256" />
+    <Property Name="StoragePath" Type="nvarchar" MaxLength="256" />
+    <Property Name="FullPath" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="RijndaelAESEncryptionHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="SourcePhrase" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="EncryptedPhrase" Type="nvarchar" MaxLength="256" />
+    <Property Name="PhraseEncryptionRequestsCount" Type="int" Nullable="false" />
+    <Property Name="EncryptionVectorUsed" Type="binary" MaxLength="16" Nullable="false" />
+    <Property Name="EncryptionKeyUsed" Type="binary" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WebApiTrainingModelStoreContainer">
+    <EntitySet Name="FileStorageSettings" EntityType="Self.FileStorageSettings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RijndaelAESEncryptionHistory" EntityType="Self.RijndaelAESEncryptionHistory" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
